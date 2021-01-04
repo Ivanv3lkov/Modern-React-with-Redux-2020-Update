@@ -1,6 +1,6 @@
 import React from 'react';
 
-import searchBar from './SearchBar.css'
+import './SearchBar.css'
 
 class SearchBar extends React.Component {
   state = { term: '' };
