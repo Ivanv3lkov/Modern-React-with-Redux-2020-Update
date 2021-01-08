@@ -1,1 +1,1 @@
-Simple app created based on Hooks.
+Simple app based on Hooks.
