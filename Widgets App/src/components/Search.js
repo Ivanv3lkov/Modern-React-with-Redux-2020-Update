@@ -33,7 +33,7 @@ const Search = () => {
     search();
   }, [debouncedTerm]);
 
-  const renderedResults = results.map((result) => {
+  const renderedResults = results.map(result => {
     return (
       <div key={result.pageid} className="item">
         <div className="right floated content">
