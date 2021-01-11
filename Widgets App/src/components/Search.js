@@ -8,7 +8,11 @@ const Search = () => {
 
   useEffect(() => {
     const timerId = setTimeout(() => {
-      setDebouncedTerm(term);
+      if (term.trim() === '') {
+        setTerm('');
+      } else {
+        setDebouncedTerm(term);
+      }
     }, 1000);
 
     return () => {
