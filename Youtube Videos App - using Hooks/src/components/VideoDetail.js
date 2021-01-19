@@ -1,8 +1,13 @@
 import React from 'react';
 
+import Spin from 'antd/es/spin';
+import { LoadingOutlined } from '@ant-design/icons';
+
 const VideoDetail = ({ video }) => {
+  const antIcon = <LoadingOutlined style={{ fontSize: 100 }} spin />;
   if (!video) {
-    return <div>Loading...</div>;
+    return <Spin indicator={antIcon} />
+  
   }
 
   const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`;
