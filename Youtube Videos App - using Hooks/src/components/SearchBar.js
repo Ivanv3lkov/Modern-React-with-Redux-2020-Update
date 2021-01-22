@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const SearchBar = ({ onFormSubmit }) => {
   const [term, setTerm] = useState('');
 
-  const onSubmit = (event) => {
+  const onSubmit = event => {
     event.preventDefault();
 
     onFormSubmit(term);
