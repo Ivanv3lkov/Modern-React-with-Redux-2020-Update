@@ -12,8 +12,6 @@ class WeatherList extends Component {
     const humidities = cityData.list.map(weather => weather.main.humidity);
     const { lat, lon} = cityData.city.coord;
 
-    console.log(cityData)
-
       return (
         <tr key={name}>
           <td><GoogleMap lat={lat} lon={lon}/></td>
